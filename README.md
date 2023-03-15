@@ -27,7 +27,7 @@ curl -i -X POST --data-binary @${PATH_TO_FILE_1} \
 
 # Resume upload (replace {id} in url with id from previous response)
 curl -i -X PATCH --data-binary @${PATH_TO_FILE_2} \
-  -H "Content-Range: bytes 524288-809955/809955" \
+  -H "Content-Range: bytes 524288-809954/809955" \
   http://localhost:3000/files/{id}
 ```
 
